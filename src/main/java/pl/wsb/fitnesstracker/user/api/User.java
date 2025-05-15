@@ -33,6 +33,14 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
+    /**
+     * tworzy nowego usera
+     * @param firstName imie usera
+     * @param lastName nazwisko usera
+     * @param birthdate data urodzenia usera
+     * @param email email usera
+     */
+
     public User(
             final String firstName,
             final String lastName,
@@ -45,5 +53,39 @@ public class User {
         this.email = email;
     }
 
+    /**
+     * ustawia imie usera
+     * @param firstName nowe imie
+     */
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    /**
+     * ustawia nazwisko usera
+     * @param lastName nowe nazwisko
+     */
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    /**
+     * ustawia date urodzenia usera
+     * @param birthdate nowa data urodzenia
+     */
+
+    public void setBirthdate(LocalDate birthdate) {
+        this.birthdate = birthdate;
+    }
+
+    /**
+     * ustawia email usera
+     * @param email nowy email
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
 
