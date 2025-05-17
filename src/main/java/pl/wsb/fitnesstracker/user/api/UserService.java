@@ -43,4 +43,30 @@ public interface UserService {
      */
 
     User updateUser(Long userId, User user);
+
+    /**
+     * Znajduje użytkownika na podstawie adresu e-mail (bez rozróżniania wielkości liter).
+     * @param email adres e-mail użytkownika
+     * @return lista zawierająca tylko jeden element: id i email użytkownika
+     */
+    List<UserListItemDto> findUserByEmail(String email);
+
+    /**
+     * Pobiera listę użytkowników starszych niż podana data.
+     *
+     * @param birthdate Data graniczna (użytkownicy muszą być starsi od tej daty)
+     * @return Lista użytkowników spełniających kryterium wieku
+     */
+
+    List<User> findUsersOlderThan(LocalDate birthdate);
+
+    /**
+     * Pobiera listę uproszczoną wszystkich użytkowników (bez szczegółowych danych).
+     * Wynikowa lista zawiera jedynie ID, imię i nazwisko użytkownika.
+     *
+     * @return Lista uproszczonych DTO użytkowników
+     */
+
+    List<UserListItemDto> findAllSimpleUsers();
+
 }

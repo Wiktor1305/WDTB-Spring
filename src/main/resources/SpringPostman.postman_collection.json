@@ -1,0 +1,544 @@
+{
+	"info": {
+		"_postman_id": "693d9ded-c8b9-435c-92e3-99b5a1c41136",
+		"name": "SpringPostman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30403560",
+		"_collection_link": "https://spring-3915.postman.co/workspace/407e392f-8555-4e8a-829e-6ae5ca0a66ba/collection/30403560-693d9ded-c8b9-435c-92e3-99b5a1c41136?action=share&source=collection_link&creator=30403560"
+	},
+	"item": [
+		{
+			"name": "FirstOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:9090/v1/users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:04:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Id\": 1,\n        \"firstName\": \"Emma\",\n        \"lastName\": \"Johnson\",\n        \"birthdate\": \"1997-05-17\",\n        \"email\": \"Emma.Johnson@domain.com\"\n    },\n    {\n        \"Id\": 2,\n        \"firstName\": \"Ethan\",\n        \"lastName\": \"Taylor\",\n        \"birthdate\": \"1974-05-17\",\n        \"email\": \"Ethan.Taylor@domain.com\"\n    },\n    {\n        \"Id\": 3,\n        \"firstName\": \"Olivia\",\n        \"lastName\": \"Davis\",\n        \"birthdate\": \"1949-05-17\",\n        \"email\": \"Olivia.Davis@domain.com\"\n    },\n    {\n        \"Id\": 4,\n        \"firstName\": \"Daniel\",\n        \"lastName\": \"Thomas\",\n        \"birthdate\": \"1991-05-17\",\n        \"email\": \"Daniel.Thomas@domain.com\"\n    },\n    {\n        \"Id\": 5,\n        \"firstName\": \"Sophia\",\n        \"lastName\": \"Baker\",\n        \"birthdate\": \"1976-05-17\",\n        \"email\": \"Sophia.Baker@domain.com\"\n    },\n    {\n        \"Id\": 6,\n        \"firstName\": \"Liam\",\n        \"lastName\": \"Jones\",\n        \"birthdate\": \"2002-05-17\",\n        \"email\": \"Liam.Jones@domain.com\"\n    },\n    {\n        \"Id\": 7,\n        \"firstName\": \"Ava\",\n        \"lastName\": \"Williams\",\n        \"birthdate\": \"2004-05-17\",\n        \"email\": \"Ava.Williams@domain.com\"\n    },\n    {\n        \"Id\": 8,\n        \"firstName\": \"Noah\",\n        \"lastName\": \"Miller\",\n        \"birthdate\": \"1986-05-17\",\n        \"email\": \"Noah.Miller@domain.com\"\n    },\n    {\n        \"Id\": 9,\n        \"firstName\": \"Grace\",\n        \"lastName\": \"Anderson\",\n        \"birthdate\": \"1992-05-17\",\n        \"email\": \"Grace.Anderson@domain.com\"\n    },\n    {\n        \"Id\": 10,\n        \"firstName\": \"Oliver\",\n        \"lastName\": \"Swift\",\n        \"birthdate\": \"1996-05-17\",\n        \"email\": \"Oliver.Swift@domain.com\"\n    }\n]"
+				},
+				{
+					"name": "http://localhost:9090/v1/users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:04:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Id\": 1,\n        \"firstName\": \"Emma\",\n        \"lastName\": \"Johnson\",\n        \"birthdate\": \"1997-05-17\",\n        \"email\": \"Emma.Johnson@domain.com\"\n    },\n    {\n        \"Id\": 2,\n        \"firstName\": \"Ethan\",\n        \"lastName\": \"Taylor\",\n        \"birthdate\": \"1974-05-17\",\n        \"email\": \"Ethan.Taylor@domain.com\"\n    },\n    {\n        \"Id\": 3,\n        \"firstName\": \"Olivia\",\n        \"lastName\": \"Davis\",\n        \"birthdate\": \"1949-05-17\",\n        \"email\": \"Olivia.Davis@domain.com\"\n    },\n    {\n        \"Id\": 4,\n        \"firstName\": \"Daniel\",\n        \"lastName\": \"Thomas\",\n        \"birthdate\": \"1991-05-17\",\n        \"email\": \"Daniel.Thomas@domain.com\"\n    },\n    {\n        \"Id\": 5,\n        \"firstName\": \"Sophia\",\n        \"lastName\": \"Baker\",\n        \"birthdate\": \"1976-05-17\",\n        \"email\": \"Sophia.Baker@domain.com\"\n    },\n    {\n        \"Id\": 6,\n        \"firstName\": \"Liam\",\n        \"lastName\": \"Jones\",\n        \"birthdate\": \"2002-05-17\",\n        \"email\": \"Liam.Jones@domain.com\"\n    },\n    {\n        \"Id\": 7,\n        \"firstName\": \"Ava\",\n        \"lastName\": \"Williams\",\n        \"birthdate\": \"2004-05-17\",\n        \"email\": \"Ava.Williams@domain.com\"\n    },\n    {\n        \"Id\": 8,\n        \"firstName\": \"Noah\",\n        \"lastName\": \"Miller\",\n        \"birthdate\": \"1986-05-17\",\n        \"email\": \"Noah.Miller@domain.com\"\n    },\n    {\n        \"Id\": 9,\n        \"firstName\": \"Grace\",\n        \"lastName\": \"Anderson\",\n        \"birthdate\": \"1992-05-17\",\n        \"email\": \"Grace.Anderson@domain.com\"\n    },\n    {\n        \"Id\": 10,\n        \"firstName\": \"Oliver\",\n        \"lastName\": \"Swift\",\n        \"birthdate\": \"1996-05-17\",\n        \"email\": \"Oliver.Swift@domain.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Wylistowanie podstawowych informacji (ID + imię i nazwisko)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/users/simple",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users",
+								"simple"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:45:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Emma\",\n        \"lastName\": \"Johnson\",\n        \"email\": null\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"Ethan\",\n        \"lastName\": \"Taylor\",\n        \"email\": null\n    },\n    {\n        \"id\": 3,\n        \"firstName\": \"Oliwia\",\n        \"lastName\": \"Kaczka\",\n        \"email\": null\n    },\n    {\n        \"id\": 4,\n        \"firstName\": \"Daniel\",\n        \"lastName\": \"Thomas\",\n        \"email\": null\n    },\n    {\n        \"id\": 5,\n        \"firstName\": \"Sophia\",\n        \"lastName\": \"Baker\",\n        \"email\": null\n    },\n    {\n        \"id\": 6,\n        \"firstName\": \"Liam\",\n        \"lastName\": \"Jones\",\n        \"email\": null\n    },\n    {\n        \"id\": 7,\n        \"firstName\": \"Ava\",\n        \"lastName\": \"Williams\",\n        \"email\": null\n    },\n    {\n        \"id\": 8,\n        \"firstName\": \"Noah\",\n        \"lastName\": \"Miller\",\n        \"email\": null\n    },\n    {\n        \"id\": 9,\n        \"firstName\": \"Grace\",\n        \"lastName\": \"Anderson\",\n        \"email\": null\n    },\n    {\n        \"id\": 10,\n        \"firstName\": \"Oliver\",\n        \"lastName\": \"Swift\",\n        \"email\": null\n    },\n    {\n        \"id\": 12,\n        \"firstName\": \"Karol\",\n        \"lastName\": \"Kaczmarski\",\n        \"email\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Pobranie szczegółów użytkownika (po ID)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:38:29 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 1,\n    \"firstName\": \"Emma\",\n    \"lastName\": \"Johnson\",\n    \"birthdate\": \"1997-05-17\",\n    \"email\": \"Emma.Johnson@domain.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Utworzenie nowego użytkownika",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Karol\",\r\n  \"lastName\": \"Kaczmarski\",\r\n  \"birthdate\": \"1990-01-01\",\r\n  \"email\": \"karol.kaczmarski@example.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:38:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 12,\n    \"firstName\": \"Karol\",\n    \"lastName\": \"Kaczmarski\",\n    \"birthdate\": \"1990-01-01\",\n    \"email\": \"karol.kaczmarski@example.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Usunięcie użytkownika (po ID)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/users/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users",
+								"11"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:38:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Wyszukiwanie po fragmencie e-maila",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/users/email?email=DavIS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users",
+								"email"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "DavIS"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:38:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"firstName\": \"Oliwia\",\n        \"lastName\": \"Delfin\",\n        \"email\": \"olivia.davis@nowydomain.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Wyszukiwanie użytkowników starszych niż X lat",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/v1/users/older/1976-01-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users",
+								"older",
+								"1976-01-01"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:38:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Id\": 2,\n        \"firstName\": \"Ethan\",\n        \"lastName\": \"Taylor\",\n        \"birthdate\": \"1974-05-17\",\n        \"email\": \"Ethan.Taylor@domain.com\"\n    },\n    {\n        \"Id\": 3,\n        \"firstName\": \"Oliwia\",\n        \"lastName\": \"Delfin\",\n        \"birthdate\": \"1949-05-17\",\n        \"email\": \"olivia.davis@nowydomain.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Aktualizacja użytkownika (po ID)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Oliwia\",\r\n  \"lastName\": \"Kaczka\",\r\n  \"birthdate\": \"1949-05-17\",\r\n  \"email\": \"olivia.davis@nowydomain.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/v1/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"v1",
+								"users",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 13:39:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 3,\n    \"firstName\": \"Oliwia\",\n    \"lastName\": \"Kaczka\",\n    \"birthdate\": \"1949-05-17\",\n    \"email\": \"olivia.davis@nowydomain.com\"\n}"
+				}
+			]
+		}
+	]
+}
