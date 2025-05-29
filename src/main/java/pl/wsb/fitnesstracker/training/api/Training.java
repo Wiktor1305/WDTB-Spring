@@ -10,6 +10,13 @@ import pl.wsb.fitnesstracker.user.api.User;
 
 import java.util.Date;
 
+/**
+ * Encja reprezentująca trening w systemie śledzenia aktywności fizycznej.
+ * Zawiera informacje o użytkowniku, czasie, typie aktywności i metrykach wydajności.
+ */
+
+
+
 @Entity
 @Table(name = "trainings")
 @Getter
@@ -55,4 +62,42 @@ public class Training {
         this.distance = distance;
         this.averageSpeed = averageSpeed;
     }
+
+
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
+
+    /**
+     * Ustawia czas rozpoczęcia treningu.
+     * @param startTime data i czas rozpoczęcia
+     */
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    /**
+     * Ustawia czas zakończenia treningu.
+     * @param endTime data i czas zakończenia
+     */
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
+    /**
+     * Ustawia typ aktywności treningu.
+     * @param activityType typ aktywności
+     */
+    public void setActivityType(ActivityType activityType) {
+        this.activityType = activityType;
+    }
+
+    /**
+     * Ustawia średnią prędkość treningu.
+     * @param averageSpeed średnia prędkość
+     */
+    public void setAverageSpeed(double averageSpeed) {
+        this.averageSpeed = averageSpeed;
+    }
+
 }

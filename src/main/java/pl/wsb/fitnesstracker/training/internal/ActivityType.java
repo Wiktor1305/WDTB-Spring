@@ -1,6 +1,9 @@
 package pl.wsb.fitnesstracker.training.internal;
 
-// TODO : JavaDoc
+/**
+ * Typ wyliczeniowy reprezentujący rodzaje aktywności fizycznej dostępne w systemie.
+ */
+
 public enum ActivityType {
 
     RUNNING("Running"),
