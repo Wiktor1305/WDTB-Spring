@@ -69,4 +69,12 @@ public interface UserService {
 
     List<UserListItemDto> findAllSimpleUsers();
 
+    /**
+     * zwraca liste userow w postaci pelnych obiektow
+     *
+     * @return lista userow
+     */
+
+    List<User> findAllUsers();
+
 }

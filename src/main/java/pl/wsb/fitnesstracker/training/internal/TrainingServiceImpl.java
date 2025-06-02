@@ -3,10 +3,7 @@ package pl.wsb.fitnesstracker.training.internal;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.wsb.fitnesstracker.training.api.Training;
-import pl.wsb.fitnesstracker.training.api.TrainingDto;
-import pl.wsb.fitnesstracker.training.api.TrainingNotFoundException;
-import pl.wsb.fitnesstracker.training.api.TrainingProvider;
+import pl.wsb.fitnesstracker.training.api.*;
 import pl.wsb.fitnesstracker.user.api.User;
 import pl.wsb.fitnesstracker.user.api.UserProvider;
 
@@ -20,7 +17,7 @@ import java.util.Optional;
  */
 
 @Service
-public class TrainingServiceImpl implements TrainingProvider {
+public class TrainingServiceImpl implements TrainingService {
 
     private final TrainingRepository repository;
     private final UserProvider userProvider;
@@ -147,6 +144,18 @@ public class TrainingServiceImpl implements TrainingProvider {
         training.setAverageSpeed(dto.getAverageSpeed());
 
         return repository.save(training);
+    }
+
+    /**
+     * zwraca liste treningow przypisanych do usera
+     *
+     * @param userId identyfikator usera dla ktorego maja zostac pobrane treningi
+     * @return lista treningow usera o podanym id
+     */
+
+    @Override
+    public List<Training> findTrainingsByUser(Long userId) {
+        return getByUser(userId);
     }
 
 }
